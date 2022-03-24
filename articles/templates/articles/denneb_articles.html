@@ -8,5 +8,23 @@
 </head>
 <body>
     <h1>different app page ni denneb pogi</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Book Descriptions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{book.book_name}}</td>
+                <td>{{book.book_description}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    
+    </table>
 </body>
 </html>
